@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Formulário Financiamento</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f002f8d3ca.js" crossorigin="anonymous"></script>
-  
-    <link rel="stylesheet" type="text/css" href="styles/materialize.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Formulário Financiamento</title>
 
-    <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f002f8d3ca.js" crossorigin="anonymous"></script>
 
-    <link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" type="text/css" href="styles/materialize.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Template PWA">
-    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="scripts/materialize.js"></script>
 
-    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+	<link rel="manifest" href="/manifest.json">
 
-    <link rel="icon"
-         type="image/png"
-         href="images/icons/icon-144x144.png">
-  </head>
-  <body>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Template PWA">
+	<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
 
-    <nav>
-      <div class="nav-wrapper blue darken-1">
-        <a href="#" class="brand-logo center">Formulário Financiamento</a>
-      </div>
-    </nav>
+	<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#2F3BA2">
+
+	<link rel="icon" type="image/png" href="images/icons/icon-144x144.png">
+</head>
+
+<body>
+
+	<nav>
+		<div class="nav-wrapper blue darken-1">
+			<a href="#" class="brand-logo center"><i class="far fa-money-bill-alt"></i>Formulário Financiamento</a>
+		</div>
+	</nav>
 
 
-    <main class="container">
-      <div class="row" style="margin-top:50px">
-        <div class="col s12" style = "font-weight: bold">
-          <span> <i class="fas fa-file-invoice"></i>  Atualmente qual a sua renda familiar? </span>
-          <input id="renda" type="text" class="validate">
-          <span> <i class="fas fa-coins"></i> Qual o valor do bem que desja adquirir?</span>
-          <input id="bem" type="text" class="validate">
-          <span><i class="fas fa-phone"></i> Qual seu telefone para contato favorito?</span> 
-          <input id="tel" type="tel" name="tel" class="validate">
-          <span><i class="far fa-envelope"></i> Qual seu e-mail para envio das cotações e boletos?</span> 
-          <input id="email" type="email" class="validate">
-          <button class="waves-effect waves-light  btn-large" id="button" type="button" name="button">
-            Enviar requisição de financiamento <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </main>
+	<main class="container">
+		<div class="row" style="margin-top:50px">
+			<div class="col s12" style="font-weight: bold">
 
-    <script type="text/javascript" src="scripts/index.js"></script>
-  </body>
+				<div class="row">
+					<div class="input-field col s12">
+            <input id="renda" type="text" class="validate">
+            <label for="renda"> <i class="fas fa-file-invoice"></i> Atualmente qual a sua renda familiar? </label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+            <input placeholder="R$ XX.XXX,XX" id="bem" type="text" class="validate">
+            <label for="bem"> <i class="fas fa-coins"></i> Qual o valor do bem que desja adquirir?</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+            <input id="tel" type="tel" name="tel" class="validate">
+            <label for="tel"><i class="fas fa-phone"></i> Qual seu telefone para contato favorito?</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email"><i class="far fa-envelope"></i> Qual seu e-mail para envio das cotações e
+							boletos?</label>
+					</div>
+				</div>
+
+				<button class="waves-effect waves-light  btn-large" id="button" type="button" name="button">
+					Enviar requisição de financiamento <i class="fas fa-arrow-right"></i>
+				</button>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+
 </html>

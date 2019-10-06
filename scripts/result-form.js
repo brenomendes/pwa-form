@@ -2,17 +2,18 @@
 	'use strict';
 
 	window.onload = function () {
+		var div;
 
-		var div = document.getElementById('renda');
+		div = document.getElementById('renda');
 		div.innerHTML += localStorage.getItem('renda');
 
-		var div = document.getElementById('bem');
+		div = document.getElementById('bem');
 		div.innerHTML += localStorage.getItem('bem');
 
-		var div = document.getElementById('tel');
+		div = document.getElementById('tel');
 		div.innerHTML += localStorage.getItem('tel');
 
-		var div = document.getElementById('email');
+		div = document.getElementById('email');
 		div.innerHTML += localStorage.getItem('email');
 	}
 	if ('serviceWorker' in navigator) {
