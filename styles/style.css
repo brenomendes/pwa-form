@@ -1,0 +1,17 @@
+.card {
+  margin: 15px;
+}
+
+.container {
+  text-align: left;
+}
+
+.btn-large{
+  margin: 0 auto; 
+  align-items: center;
+    display: flex;
+}
+
+.btn-large i{
+  margin-left: 5px;
+}
